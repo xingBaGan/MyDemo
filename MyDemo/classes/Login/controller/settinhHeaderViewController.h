@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface settinhHeaderViewController : UIViewController
-
+@property (strong,nonatomic) NSString* phone;
+@property (strong,nonatomic) NSString* passWard;
 @end
 
 NS_ASSUME_NONNULL_END

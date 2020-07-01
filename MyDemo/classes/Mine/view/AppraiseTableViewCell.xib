@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AppraiseTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCU-dc-sWg">
+                        <rect key="frame" x="40" y="0.0" width="289" height="120"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="衣服质量很棒，但导购原的服务态度相当的差" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRJ-Vz-rYw">
+                                <rect key="frame" x="4.5" y="43" width="280" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="gE4-Fb-xMK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="三星好评" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpq-TL-Qg9">
+                                <rect key="frame" x="187" y="91" width="82" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="liu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Vxf-p3-HFb">
+                                <rect key="frame" x="135.5" y="11" width="18.5" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="474-Ph-EtS"/>
+                            <constraint firstItem="Vxf-p3-HFb" firstAttribute="top" secondItem="RCU-dc-sWg" secondAttribute="top" constant="11" id="4SA-P1-hwu"/>
+                            <constraint firstItem="QRJ-Vz-rYw" firstAttribute="centerX" secondItem="RCU-dc-sWg" secondAttribute="centerX" id="6hi-Qq-sdF"/>
+                            <constraint firstItem="Vxf-p3-HFb" firstAttribute="centerX" secondItem="RCU-dc-sWg" secondAttribute="centerX" id="8i5-TN-1Wm"/>
+                            <constraint firstItem="QRJ-Vz-rYw" firstAttribute="top" secondItem="RCU-dc-sWg" secondAttribute="top" constant="43" id="guy-FD-2rn"/>
+                            <constraint firstAttribute="width" constant="289" id="o5N-jg-4Ju"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="O0k-J4-a0s">
+                        <rect key="frame" x="0.0" y="9" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RCU-dc-sWg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HFG-Vm-3Us"/>
+                    <constraint firstItem="RCU-dc-sWg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="nVy-HM-BL6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="appraise" destination="QRJ-Vz-rYw" id="uXU-27-iq4"/>
+                <outlet property="image" destination="O0k-J4-a0s" id="dPc-aa-B7U"/>
+                <outlet property="starNum" destination="bpq-TL-Qg9" id="js7-XZ-Zkc"/>
+                <outlet property="username" destination="Vxf-p3-HFb" id="Jbe-yZ-nL6"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

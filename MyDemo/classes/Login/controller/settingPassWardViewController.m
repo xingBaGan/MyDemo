@@ -13,6 +13,7 @@
 {
     UIView *bgView;
     UITextField *passward;
+    NSString* phone;
 }
 
 @end
@@ -29,7 +30,7 @@
     self.view.backgroundColor = [UIColor colorWithRed:240 / 255.0f green:240 / 255.0f blue:240 / 255.0f alpha:1];
     UIBarButtonItem *addBtn = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain
                                                               target:self action:@selector(clickaddBtn)];
-    [addBtn setImage:[UIImage imageNamed:@"goback_back_orange_on"]];
+    [addBtn setImage:[UIImage imageNamed:@"arrow-back"]];
     [addBtn setImageInsets:UIEdgeInsetsMake(0, -15, 0, 15)];
     addBtn.tintColor = [UIColor colorWithRed:248 / 255.0f green:144 / 255.0f blue:34 / 255.0f alpha:1];
     [self.navigationItem setLeftBarButtonItem:addBtn];

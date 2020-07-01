@@ -9,7 +9,7 @@
 #import "MMZCHMViewController.h"
 #import <SMS_SDK/SMSSDK.h>
 #import  "SVProgressHUD.h"
-
+#import <MOBFoundation/MobSDK+Privacy.h>
 #import "settingPassWardViewController.h"
 @interface MMZCHMViewController ()
 {
@@ -34,6 +34,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self createTextFields];
+    
+    
+    [MobSDK uploadPrivacyPermissionStatus:YES onResult:^(BOOL success) {
+        NSLog(@"%d",success);
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -41,8 +46,8 @@
     self.navigationController.navigationBarHidden = NO;
     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
     self.view.backgroundColor = [UIColor colorWithRed:240 / 255.0f green:240 / 255.0f blue:240 / 255.0f alpha:1];
-    UIBarButtonItem *addBtn = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(clickaddBtn)];
-    [addBtn setImage:[UIImage imageNamed:@"goback_back_orange_on"]];
+    UIBarButtonItem *addBtn = [[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStylePlain target:self action:@selector(clickaddBtn)];
+    [addBtn setImage:[UIImage imageNamed:@"arrow-back"]];
     [addBtn setImageInsets:UIEdgeInsetsMake(0, -15, 0, 15)];
     addBtn.tintColor = [UIColor colorWithRed:248 / 255.0f green:144 / 255.0f blue:34 / 255.0f alpha:1];
     [self.navigationItem setLeftBarButtonItem:addBtn];
@@ -234,7 +239,7 @@
             //  验证成功
             NSLog(@"验证成功");
             settingPassWardViewController *vc = [[settingPassWardViewController alloc]init];
-            vc.phone = phone.text;
+            vc.phone = self->phone.text;
             [self.navigationController pushViewController:vc animated:YES];
         } else {
             NSLog(@"验证失败");

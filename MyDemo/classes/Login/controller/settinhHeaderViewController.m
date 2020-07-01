@@ -7,7 +7,7 @@
 //
 
 #import "settinhHeaderViewController.h"
-//#import "LoginViewController.h"
+#import "LoginViewController.h"
 //#import "NSString+NTES.h"
 #import "SVProgressHUD.h"
 #import "Merchan.h"
@@ -22,6 +22,14 @@
 @end
 
 @implementation settinhHeaderViewController
+-(instancetype)init{
+    self = [super init];
+    if(self){
+        self.phone = @"134165";
+        self.passWard = @"164164";
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,7 +43,7 @@
     self.view.backgroundColor = [UIColor colorWithRed:240 / 255.0f green:240 / 255.0f blue:240 / 255.0f alpha:1];
     UIBarButtonItem *addBtn = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain
                                                               target:self action:@selector(clickaddBtn)];
-    [addBtn setImage:[UIImage imageNamed:@"goback_back_orange_on"]];
+    [addBtn setImage:[UIImage imageNamed:@"back-arrow"]];
     [addBtn setImageInsets:UIEdgeInsetsMake(0, -15, 0, 15)];
     addBtn.tintColor = [UIColor colorWithRed:248 / 255.0f green:144 / 255.0f blue:34 / 255.0f alpha:1];
     [self.navigationItem setLeftBarButtonItem:addBtn];

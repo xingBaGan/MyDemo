@@ -14,29 +14,47 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - BMKLocationKit (1.8.5)
   - mob_smssdk (3.2.6):
     - MOBFoundation
   - MOBFoundation (3.2.14)
+  - SDWebImage (5.7.4):
+    - SDWebImage/Core (= 5.7.4)
+  - SDWebImage/Core (5.7.4)
   - SVProgressHUD (2.2.5)
+  - SWRevealViewController (2.3.0)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - BMKLocationKit
   - mob_smssdk
-  - SVProgressHUD
+  - SDWebImage
+  - SVProgressHUD (~> 2.2.5)
+  - SWRevealViewController
+  - YYModel
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - AFNetworking
+    - BMKLocationKit
     - mob_smssdk
     - MOBFoundation
+    - SDWebImage
     - SVProgressHUD
+    - SWRevealViewController
+    - YYModel
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BMKLocationKit: fd3d6b4a9a3a1a2763819f56b780bda5fc5b8726
   mob_smssdk: 853887406fccf210695fc8fad1e17b324a8c6d61
   MOBFoundation: 1663e6202a753bfa4bc7e889a837362870510587
+  SDWebImage: 48b88379b798fd1e4298f95bb25d2cdabbf4deb3
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: b663172c771b4cf61720a73a083b8bce06589ad3
+PODFILE CHECKSUM: 257c49ac9df216ca218450f6ba9c588974b83343
 
 COCOAPODS: 1.9.1

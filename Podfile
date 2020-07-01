@@ -6,4 +6,8 @@ target 'MyDemo' do
 pod 'AFNetworking' , '~>3.1.0'
 pod 'mob_smssdk'
 pod 'SVProgressHUD' , '~>2.2.5'
+pod 'YYModel'
+pod 'BMKLocationKit'
+pod 'SDWebImage'
+pod 'SWRevealViewController'
 end

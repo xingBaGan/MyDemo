@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="gDetailViewController">
+            <connections>
+                <outlet property="image" destination="grC-Dg-u1g" id="K4R-PN-btX"/>
+                <outlet property="introduce" destination="Xju-qg-FLJ" id="7Ar-79-qQU"/>
+                <outlet property="renjun" destination="CSL-aK-tTQ" id="Kps-mg-cJr"/>
+                <outlet property="shopAddress" destination="SJN-VW-mEL" id="Xvd-7u-Fdq"/>
+                <outlet property="shopName" destination="hCn-Ri-7lE" id="t3u-gD-93V"/>
+                <outlet property="shopPhone" destination="Uqc-vE-fEd" id="I6m-9w-kmN"/>
+                <outlet property="view" destination="GX9-TU-XBS" id="8Jk-Mc-W7P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="GX9-TU-XBS">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="grC-Dg-u1g">
+                    <rect key="frame" x="31" y="104" width="150" height="150"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="R27-35-ugP"/>
+                        <constraint firstAttribute="height" constant="150" id="RZE-hw-1pj"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="aUL-oa-BQO">
+                    <rect key="frame" x="201" y="134" width="156" height="122.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="红旗连锁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCn-Ri-7lE">
+                            <rect key="frame" x="25.5" y="0.0" width="105.5" height="31.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSL-aK-tTQ">
+                            <rect key="frame" x="56.5" y="56.5" width="43.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全场清仓，买一送一" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xju-qg-FLJ">
+                            <rect key="frame" x="0.0" y="102" width="156" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBi-Za-F1C">
+                    <rect key="frame" x="31.5" y="304" width="351" height="180"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qQz-es-MBo">
+                            <rect key="frame" x="20" y="10" width="50" height="50"/>
+                            <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Gjw-zB-NcB"/>
+                                <constraint firstAttribute="height" constant="50" id="rE2-2s-pKq"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="浙江绍兴柯桥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJN-VW-mEL">
+                            <rect key="frame" x="94" y="35" width="104" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0gq-c0-lGX">
+                            <rect key="frame" x="20" y="90" width="50" height="50"/>
+                            <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="JOY-zn-viU"/>
+                                <constraint firstAttribute="width" constant="50" id="LMR-Oq-hoX"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4561561" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqc-vE-fEd">
+                            <rect key="frame" x="94" y="105.5" width="67" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYA-MX-PS9">
+                            <rect key="frame" x="300" y="20" width="31" height="30"/>
+                            <state key="normal" title="导航"/>
+                            <connections>
+                                <action selector="local:" destination="-1" eventType="touchUpInside" id="kya-5Z-WEn"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="cYA-MX-PS9" secondAttribute="bottom" constant="130" id="CdQ-Wt-wiw"/>
+                        <constraint firstItem="Uqc-vE-fEd" firstAttribute="top" secondItem="SJN-VW-mEL" secondAttribute="bottom" constant="50" id="Ofb-ZY-Lai"/>
+                        <constraint firstAttribute="trailing" secondItem="0gq-c0-lGX" secondAttribute="trailing" constant="281" id="Ozh-cu-JHm"/>
+                        <constraint firstItem="cYA-MX-PS9" firstAttribute="leading" secondItem="KBi-Za-F1C" secondAttribute="leading" constant="300" id="ZCc-j6-I0A"/>
+                        <constraint firstItem="SJN-VW-mEL" firstAttribute="top" secondItem="KBi-Za-F1C" secondAttribute="top" constant="35" id="lfh-mt-C5p"/>
+                        <constraint firstItem="SJN-VW-mEL" firstAttribute="leading" secondItem="qQz-es-MBo" secondAttribute="trailing" constant="24" id="lnB-ZK-coH"/>
+                        <constraint firstItem="qQz-es-MBo" firstAttribute="leading" secondItem="KBi-Za-F1C" secondAttribute="leading" constant="20" id="mOG-gp-sFb"/>
+                        <constraint firstAttribute="width" constant="351" id="oae-H8-XBf"/>
+                        <constraint firstAttribute="height" constant="180" id="pzD-0o-XDl"/>
+                        <constraint firstItem="0gq-c0-lGX" firstAttribute="top" secondItem="qQz-es-MBo" secondAttribute="bottom" constant="30" id="qDx-gF-QH7"/>
+                        <constraint firstItem="qQz-es-MBo" firstAttribute="top" secondItem="KBi-Za-F1C" secondAttribute="top" constant="10" id="xYH-jJ-SyX"/>
+                        <constraint firstItem="Uqc-vE-fEd" firstAttribute="leading" secondItem="0gq-c0-lGX" secondAttribute="trailing" constant="24" id="xfq-oI-VCV"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1i-zo-QV5">
+                    <rect key="frame" x="145.5" y="514" width="123" height="50"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="D1P-yu-HHa"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="hJe-3f-hU1"/>
+                        <constraint firstAttribute="width" constant="123" id="ylb-eR-ubU"/>
+                    </constraints>
+                    <state key="normal" title="查看商铺所有评价">
+                        <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="appraise:" destination="-1" eventType="touchUpInside" id="FiV-hJ-vTA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="grC-Dg-u1g" firstAttribute="leading" secondItem="AQj-t9-yc1" secondAttribute="leading" constant="31" id="XbE-Vk-V0i"/>
+                <constraint firstItem="KBi-Za-F1C" firstAttribute="centerX" secondItem="AQj-t9-yc1" secondAttribute="centerX" id="ZJR-3g-6tj"/>
+                <constraint firstItem="V1i-zo-QV5" firstAttribute="top" secondItem="KBi-Za-F1C" secondAttribute="bottom" constant="30" id="azy-hq-ECP"/>
+                <constraint firstItem="aUL-oa-BQO" firstAttribute="top" secondItem="AQj-t9-yc1" secondAttribute="top" constant="90" id="bCg-pH-UHg"/>
+                <constraint firstItem="AQj-t9-yc1" firstAttribute="bottom" secondItem="V1i-zo-QV5" secondAttribute="bottom" priority="500" constant="135" id="cwi-W8-x1H"/>
+                <constraint firstItem="grC-Dg-u1g" firstAttribute="top" secondItem="AQj-t9-yc1" secondAttribute="top" constant="60" id="gcD-S6-vip"/>
+                <constraint firstItem="V1i-zo-QV5" firstAttribute="centerX" secondItem="AQj-t9-yc1" secondAttribute="centerX" id="nBo-pX-0dk"/>
+                <constraint firstItem="KBi-Za-F1C" firstAttribute="top" secondItem="grC-Dg-u1g" secondAttribute="bottom" constant="50" id="oL6-6B-0TR"/>
+                <constraint firstItem="aUL-oa-BQO" firstAttribute="leading" secondItem="grC-Dg-u1g" secondAttribute="trailing" constant="20" id="tEN-7o-f00"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="AQj-t9-yc1"/>
+            <point key="canvasLocation" x="153.62318840579712" y="800.89285714285711"/>
+        </view>
+    </objects>
+</document>

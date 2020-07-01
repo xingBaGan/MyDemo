@@ -11,6 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *idtextfield;
+@property (weak, nonatomic) IBOutlet UITextField *passwordtextfield;
+- (IBAction)login:(id)sender;
+- (IBAction)regist:(id)sender;
+- (IBAction)forget:(id)sender;
+
+
 
 @end
 

@@ -1,8 +1,8 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/MOBFoundation/MOBFoundation" "${PODS_ROOT}/mob_smssdk/SMSSDK"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/BMKLocationKit/framework" "${PODS_ROOT}/MOBFoundation/MOBFoundation" "${PODS_ROOT}/mob_smssdk/SMSSDK"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/SVProgressHUD"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"SVProgressHUD" -l"c++" -l"z" -framework "CoreGraphics" -framework "JavaScriptCore" -framework "MOBFoundation" -framework "MOBFoundationEx" -framework "MobileCoreServices" -framework "QuartzCore" -framework "SMS_SDK" -framework "Security" -framework "SystemConfiguration"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/SVProgressHUD" "${PODS_ROOT}/Headers/Public/SWRevealViewController" "${PODS_ROOT}/Headers/Public/YYModel"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/SWRevealViewController" "${PODS_CONFIGURATION_BUILD_DIR}/YYModel"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"SDWebImage" -l"SVProgressHUD" -l"SWRevealViewController" -l"YYModel" -l"c++" -l"sqlite3.0" -l"z" -framework "AdSupport" -framework "BMKLocationKit" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreTelephony" -framework "Foundation" -framework "ImageIO" -framework "JavaScriptCore" -framework "MOBFoundation" -framework "MOBFoundationEx" -framework "MobileCoreServices" -framework "QuartzCore" -framework "SMS_SDK" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

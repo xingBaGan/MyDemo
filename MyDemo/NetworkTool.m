@@ -59,6 +59,8 @@ static NetworkTool *tool;
     }
 }
 
+
+
 // 打印请求地址+参数
 - (void)printNetworkLog:(MethodType)type URLString:(NSString *)urlString parameters:(NSDictionary
                                                                                      *)parameters {

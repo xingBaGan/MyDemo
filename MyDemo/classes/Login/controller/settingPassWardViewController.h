@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface settingPassWardViewController : UIViewController
-
+@property (strong,nonatomic) NSString* phone;
 @end
 
 NS_ASSUME_NONNULL_END
